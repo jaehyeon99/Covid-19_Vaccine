@@ -1,0 +1,18 @@
+.frame{
+  margin: auto;
+  border: 1px solid #000000;
+  width: 800px;
+  height: 800px;
+  overflow-y: scroll;
+}
+.info{
+  text-align: center;
+}
+.info input{
+  text-align: center;
+  width: 500px;
+  height: 30px;
+}
+.info span{
+  color: red;
+}
