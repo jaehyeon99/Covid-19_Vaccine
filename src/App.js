@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <div className="frame">
-        <h2>예방접종센터 위치정보 </h2>
+        <h2>💉 코로나 예방접종센터 위치정보 💉 </h2>
 
         <h5><Vaccine /></h5>
       </div>

@@ -38,7 +38,7 @@ function Vaccine() {
                             return null
                         } else if (items.address.toString().toLowerCase().includes(search.toString().toLowerCase())) {
                             return (
-                                <p>{items.address} <span>기관명 : </span>{items.facilityName}</p>
+                                <p><span>기관명 : </span>{items.facilityName} <span>주소 : </span>{items.address} </p>
 
                             )
                         }
