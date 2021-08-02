@@ -22,6 +22,17 @@ function Vaccine() {
     return (
         <div className="info">
 
+            {
+                Vaccine.map((itmes, index) => {
+                    return (
+                        console.log({
+                            "title": itmes.facilityName,
+                            lat: itmes.lat,
+                            lng: itmes.lng
+                        })
+                    )
+                })
+            }
             <input placeholder="기관명 또는 지역을 입력해주세요" type="text" onChange={(e) => {
                 setsearch(e.target.value)
             }} value={search} />

@@ -1,7 +1,20 @@
+html{
+  background-color: #e8e8e8;
+}
+.container{
+  display: flex;
+  justify-content: space-around;
+  justify-items: center;
+}
 .frame{
-  margin: auto;
-  border: 1px solid #000000;
-  width: 800px;
+  background-color: white;
+  margin-right: 10px;
+  margin-top: 20px;
+  margin-left: 5%;
+
+  border:2px solid white;
+  border-radius: 15px;
+  width: 45%;
   height: 800px;
   overflow-y: scroll;
 }
@@ -10,9 +23,37 @@
 }
 .info input{
   text-align: center;
-  width: 500px;
+  width: 70%;
   height: 30px;
 }
 .info span{
   color: red;
+}
+::-webkit-scrollbar{
+  display: none;
+}
+.frame_2{
+  background-color: white;
+  margin-left: 10px;
+  margin-top: 20px;
+  margin-right: 5%;
+  width: 45%;
+  height: 800px;
+  border:2px solid white;
+  border-radius: 15px;
+}
+#map{
+  margin: auto;
+  margin-top: 50px;
+}
+.information{
+  background-color: bisque;
+  height: 40vh;
+  text-align: center;
+  margin: auto;
+  width: 90%;
+}
+.information hr{
+  width: 85%;
+
 }
