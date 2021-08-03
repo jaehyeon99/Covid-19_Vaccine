@@ -9,25 +9,12 @@ function Location() {
             center: new kakao.maps.LatLng(37.567817, 127.004501), //지도의 중심좌표.
             level: 3 //지도의 레벨(확대, 축소 정도)
         };
-
         var map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
-
-
-
-
-
-
-
         var zoomControl = new kakao.maps.ZoomControl();
         map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
         kakao.maps.event.addListener(map, 'zoom_changed', function () {
-
-
-
-
         });
-
-        const displayMarker = MakerData.forEach((el) => {
+        MakerData.forEach((el) => {
             new kakao.maps.Marker({
                 map: map,
                 position: new kakao.maps.LatLng(el.lat, el.lng),

@@ -21,7 +21,7 @@ function Vaccine() {
 
     return (
         <div className="info">
-
+            {/*  json 파일에서 경도와 위도 추출 하기 위한 console.log
             {
                 Vaccine.map((itmes, index) => {
                     return (
@@ -32,7 +32,7 @@ function Vaccine() {
                         })
                     )
                 })
-            }
+            } */}
             <input placeholder="기관명 또는 지역을 입력해주세요" type="text" onChange={(e) => {
                 setsearch(e.target.value)
             }} value={search} />
@@ -45,6 +45,7 @@ function Vaccine() {
                         // return (
                         //     <h2>{address.address}</h2>
                         // )
+
                         if (search === "") {
                             return null
                         } else if (items.address.toString().toLowerCase().includes(search.toString().toLowerCase())) {
